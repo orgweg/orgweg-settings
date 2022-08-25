@@ -1,0 +1,214 @@
+html {
+    background: url(img/background.jpg) no-repeat;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-position: center center;
+    -moz-background-size: cover; /* Firefox 3.6+ */
+      -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+      -o-background-size: cover; /* Opera 9.6+ */
+      background-size: cover;
+      background-attachment: fixed;
+    cursor: url(../../cursor/cursor.cur), default;
+    overflow-x: hidden;
+}
+
+.preloader {
+  background: url(img/background.jpg) no-repeat;
+    background-position: center center;
+    -moz-background-size: cover; /* Firefox 3.6+ */
+      -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+      -o-background-size: cover; /* Opera 9.6+ */
+      background-size: cover;
+      background-attachment: fixed;
+      overflow-x: hidden;
+    
+  }
+  
+  .preloader div {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+  }
+  
+  @keyframes arrows {
+    0%,
+    100% {
+      color: rgb(255, 255, 255);
+      transform: translateY(0);
+    }
+    50% {
+      color: #000000;
+      transform: translateY(20px);
+    }
+  }
+  
+  span {
+    --delay: 0s;
+    animation: arrows 1s var(--delay) infinite ease-in;
+  }
+
+
+
+
+
+body {
+    
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    
+    
+}
+body {margin: 0;}
+::-webkit-scrollbar {
+    width: 0;
+    
+  }
+.dada {
+    display: flex;
+    justify-content: center;
+}
+
+.mainblock {
+    margin: 0;
+    padding: 0;
+    
+    width:  1040px;
+    background-color: rgba(70, 63, 63, 0.651);
+    
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.menublock {
+    
+    display: flex;
+    justify-content: center;
+    background: red;
+    height: 40px;
+    
+}
+
+
+.homeB {
+    margin-top: 2.5px;
+    margin-left: 390px;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    right: 10px;
+}
+
+.zagolovok p{
+    font-size: 28px;
+    margin: 0;
+    /*margin: 0px 0px 0px 840px;*/
+}
+
+.pricel {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.pic_code {
+    margin: 3px 3px 3px 3px;
+    margin-top: 10px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(102, 92, 92);
+    border-radius: 7px;
+}
+
+.pricel div img {
+    margin: 3px 3px 3px 3px;
+    width: 75px;
+    height: 75px;
+}
+
+.pricel div p {
+    color: white;
+}
+
+.cvet {
+    text-align: center;
+    color: white
+}
+
+a.button13 {
+    cursor: url(../../cursor/cursor.cur), default;
+    display: inline-block;
+    width: 15em;
+    font-size: 80%;
+    color: rgba(255,255,255,.9);
+    text-shadow: #2e7ebd 0 1px 2px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.1;
+    white-space: pre-line;
+    padding: .7em 0;
+    border: 1px solid;
+    border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
+    border-radius: 6px;
+    outline: none;
+    background: #60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);
+    box-shadow: inset rgba(255,255,255,.5) 1px 1px;
+    margin-bottom: 10px;
+}
+  a.button13:first-line{
+    cursor: url(../../cursor/cursor.cur), default;
+    font-size: 170%;
+    font-weight: 700;
+  }
+  a.button13:hover {
+    cursor: url(../../cursor/cursor.cur), default;
+    color: rgb(255,255,255);
+    background-image: linear-gradient(#9dc7e7, #74afdd 50%, #378bce);
+  }
+  a.button13:active {
+    cursor: url(../../cursor/cursor.cur), default;
+    color: rgb(255,255,255);
+    border-color: #2970a9;
+    background-image: linear-gradient(#5796c8, #6aa2ce);
+    box-shadow: none;
+  }
+
+@media screen and (max-width: 540px) {
+    .menublock {
+        justify-content: space-between;
+    }
+    .zagolovok{
+        margin: 0px 0px 0px 10px;
+    }
+    .dada {
+        justify-content: space-between;
+        
+    }
+    .pricel {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+  @media screen and (max-width: 425px ) {
+    
+    .menublock {
+        justify-content: space-between;
+    }
+    .zagolovok{
+        margin: 0px 0px 0px 10px;
+    }
+    .dada {
+        justify-content: space-between;
+        
+    }
+    .pricel {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .zagolovok p {
+        font-size: 25px;
+    }
+}
